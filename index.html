@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopEase</div>
+            <form class="search-bar" id="search-form">
+                <input type="text" id="search-input" placeholder="Search products..." autocomplete="off">
+                <button type="submit">🔍</button>
+            </form>
+            <div class="header-actions">
+                <button class="profile-btn" id="profile-btn">👤</button>
+                <a href="login.html" class="auth-link">Login</a>
+                <a href="signup.html" class="auth-link">Sign Up</a>
+                <div class="cart-icon" id="cart-btn">
+                    🛒 <span id="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <ul class="sidebar-list">
+                <li><a href="#" class="sidebar-link filter-btn" data-category="home">Home</a></li>
+                <li><span class="sidebar-section">Men's Clothing</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link filter-btn" data-category="mens">All Men's Products</a></li>
+                        <li class="sidebar-sub">Tops
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="tshirts">T-Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="shirts">Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="hoodies">Hoodies</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="sweatshirts">Sweatshirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="sweaters">Sweaters</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="tankTops">Tank Tops</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Bottoms
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="jeans">Jeans</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="trousers">Trousers</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="shorts">Shorts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="joggers">Joggers</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Outerwear
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="Jackets">Jackets</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="coats">Coats</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="blazers">Blazers</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Ethnic & Loungewear
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="kurtas">Kurtas</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="loungewear">Loungewear</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="undergarments">Undergarments</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Footwear & Accessories
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="footwear">Footwear</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="mens" data-sub="accessories">Accessories</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="sidebar-section">Women's Clothing</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link filter-btn" data-category="womens">All Women's Products</a></li>
+                        <li class="sidebar-sub">Tops
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="tshirts">T-Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="blouses">Blouses</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="shirts">Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="cropTops">Crop Tops</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="tunics">Tunics</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="sweatshirts">Sweatshirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Hoodies">Hoodies</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Bottoms
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Jeans">Jeans</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Trousers">Trousers</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Pants">Pants</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="LeggingsJeggings">Leggings/Jeggings</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Shorts">Shorts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Skirts">Skirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Dresses
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="CasualDresses">Casual Dresses</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="EveningDresses">Evening Dresses</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="SummerDresses">Summer Dresses</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="FormalDresses">Formal Dresses</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="WinterDresses">Winter Dresses</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Outerwear
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Jackets">Jackets</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Sweaters">Sweaters</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Coats">Coats</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Blazers">Blazers</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Ethnic & Loungewear
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Kurtis">Kurtis</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Anarkali">Anarkali</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Palazzos">Palazzos</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Dupattas">Dupattas</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Lingerie & Sleepwear
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Bras">Bras</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Panties">Panties</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Shapewear">Shapewear</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="Sleepwear">Sleepwear</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Footwear & Accessories
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="footwear">Footwear</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="womens" data-sub="accessories">Accessories</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="sidebar-section">Kids</span>
+                    <ul>
+                        <li class="sidebar-sub">Boys
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-tshirts">T-Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Shirts">Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Hoodies">Hoodies</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Sweaters">Sweaters</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Sweatshirts">Sweatshirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Jeans">Jeans</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Shorts">Shorts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Trousers">Trousers</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Pants">Pants</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Joggers">Joggers</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Coats">Coats</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Blazers">Blazers</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Kurtas">Kurtas</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Undergarments">Undergarments</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Footwear">Footwear</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="boys-Accessories">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-sub">Girls
+                            <ul>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-TShirts">T-Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Shirts">Shirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Hoodies">Hoodies</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Sweaters">Sweaters</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Sweatshirts">Sweatshirts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Frocks">Frocks</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Jeans">Jeans</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Shorts">Shorts</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Trousers">Trousers</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Leggings">Leggings</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Joggers">Joggers</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Kurtis">Kurtis</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Dresses">Dresses</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Undergarments">Undergarments</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-Footwear">Footwear</a></li>
+                                <li><a href="#" class="sidebar-link subcat-btn" data-main="kids" data-sub="girls-cAccessories">Accessories</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                <li><span class="sidebar-section">Skin Care</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="skincare" data-sub="Men">Men</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="skincare" data-sub="Women">Women</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="skincare" data-sub="Unisex">Unisex</a></li>
+                    </ul>
+                </li>
+                <li><span class="sidebar-section">Electronics</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="laptops">Laptops</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="desktops">Desktops</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="tablets">Tablets</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="monitors">Monitors</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="keyboards">Keyboards</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="mouse">Mouse</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="externalHardDrives">External Hard Drives</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="ssds">SSDs</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="penDrives">Pen Drives</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="printers">Printers</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="scanners">Scanners</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="smartphones">Smartphones</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="smartWatches">Smart Watches</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="fitnessTrackers">Fitness Trackers</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="mobileChargers">Mobile Chargers</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="mobileCables">Mobile Cables</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="powerBanks">Power Banks</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="phoneCases">Phone Cases</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="screenProtectors">Screen Protectors</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="bluetoothEarphones">Bluetooth Earphones</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="bluetoothHeadphones">Bluetooth Headphones</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="wiredHeadphones">Wired Headphones</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="bluetoothSpeakers">Bluetooth Speakers</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="homeTheaters">Home Theaters</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="microphones">Microphones</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="audioInterfaces">Audio Interfaces</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="ledSmartTVs">LED Smart TVs</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="streamingDevices">Streaming Devices</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="projectors">Projectors</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="electronics" data-sub="gamingConsoles">Gaming Consoles</a></li>
+                    </ul>
+                </li>
+                <li><span class="sidebar-section">Home Appliances</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="refrigerators">Refrigerators</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="washingMachines">Washing Machines</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="microwaveOvens">Microwave Ovens</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="airConditioners">Air Conditioners</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="electricKettles">Electric Kettles</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="mixerGrinders">Mixer Grinders</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="vacuumCleaners">Vacuum Cleaners</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="waterPurifiers">Water Purifiers</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="roomHeaters">Room Heaters</a></li>
+                        <li><a href="#" class="sidebar-link subcat-btn" data-main="homeappliances" data-sub="fans">Fans</a></li>
+                    </ul>
+                </li>
+                <li><span class="sidebar-section">Home Decor</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link filter-btn" data-category="homeDecor">All Home Decor</a></li>
+                    </ul>
+                </li>
+                <li><span class="sidebar-section">Health & Fitness</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link filter-btn" data-category="fitness">All Health & Fitness</a></li>
+                    </ul>
+                </li>
+                <li><span class="sidebar-section">Tools & DIY</span>
+                    <ul>
+                        <li><a href="#" class="sidebar-link filter-btn" data-category="tools">All Tools & DIY</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <section id="home" class="product-section">
+                <h2>All Products</h2>
+                <div class="product-list" id="home-products"></div>
+            </section>
+            <section id="mens" class="product-section">
+                <h2>Men's Clothing</h2>
+                <div class="product-list" id="mens-products"></div>
+            </section>
+            <section id="womens" class="product-section">
+                <h2>Women's Clothing</h2>
+                <div class="product-list" id="womens-products"></div>
+            </section>
+            <section id="kids" class="product-section">
+                <h2>Kids</h2>
+                <div class="product-list" id="kids-products"></div>
+            </section>
+            <section id="accessories" class="product-section">
+                <h2>Accessories</h2>
+                <div class="product-list" id="accessories-products"></div>
+            </section>
+            <section id="footwear" class="product-section">
+                <h2>Footwear</h2>
+                <div class="product-list" id="footwear-products"></div>
+            </section>
+            <section id="skincare" class="product-section">
+                <h2>Skin Care</h2>
+                <div class="product-list" id="skincare-products"></div>
+            </section>
+            <section id="electronics" class="product-section">
+                <h2>Electronics</h2>
+                <div class="product-list" id="electronics-products"></div>
+            </section>
+            <section id="fitness" class="product-section">
+                <h2>Health & Fitness</h2>
+                <div class="product-list" id="fitness-products"></div>
+            </section>
+            <section id="tools" class="product-section">
+                <h2>Tools & DIY</h2>
+                <div class="product-list" id="tools-products"></div>
+            </section>
+            <section id="homeappliances" class="product-section">
+                <h2>Home Appliances</h2>
+                <div class="product-list" id="homeappliances-products"></div>
+            </section>
+            <section id="homeDecor" class="product-section">
+                <h2>Home Decor</h2>
+                <div class="product-list" id="homeDecor-products"></div>
+            </section>
+        </main>
+    </div>
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-content">
+            <span class="close-cart" id="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <span>Total: $<span id="cart-total">0.00</span></span>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div id="checkout-modal" class="cart-modal hidden">
+        <div class="cart-content">
+            <span class="close-cart" id="close-checkout">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Full Name" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="text" placeholder="Address" required><br>
+                <input type="text" placeholder="Card Number" required maxlength="16"><br>
+                <input type="text" placeholder="Expiry (MM/YY)" required maxlength="5"><br>
+                <input type="text" placeholder="CVV" required maxlength="3"><br>
+                <button type="submit">Pay Now</button>
+            </form>
+            <div id="payment-success" class="hidden">
+                <h3>Payment Successful! Thank you for your purchase.</h3>
+            </div>
+        </div>
+    </div>
+    <div id="product-modal" class="cart-modal hidden">
+        <div class="cart-content product-detail-content">
+            <span class="close-cart" id="close-product">&times;</span>
+            <div id="product-detail"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
